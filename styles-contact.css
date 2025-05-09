@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* BARRE DE NAVIGATION DESKTOP */
+/* 1)LOGO */
+header {
+  /* position: absolute; */
+  /* position: fixed; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  background-color: aliceblue;
+  z-index: 10;
+}
+
+.logo img {
+  width: auto;
+  max-width: 60px;
+  margin-top: 10px;
+  margin-left: 10px;
+  line-height: 40px;
+}
+/* 2)NAVIGATION */
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+}
+
+.navigation li {
+  list-style-type: none;
+  padding: 0 20px;
+  line-height: 40px;
+}
+
+.navigation ul {
+  /* width: 100%; */
+  height: 40px;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* 3)RESEAUX LOGO */
+
+.reseaux {
+  height: 40px;
+  background-color: aqua;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.reseaux-logo img {
+  width: auto;
+  max-width: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+  line-height: 40px;
+}
+
+.reseaux a {
+  line-height: 30px;
+  padding-right: 15px;
+}
+/* FORMULAIRE CONTACT */
+
+.container-contact {
+  width: 80%;
+
+  /* position: absolute; */
+  /* left: 50%;
+  top: 60%; */
+  transform: translate(-50%, -50%);
+  background-color: aqua;
+  padding-bottom: 15px;
+}
+.h2-contact {
+  display: flex;
+  justify-content: center;
+  background-color: burlywood;
+  padding: 20px;
+  text-align: center;
+}
+label {
+  display: inline-block;
+  width: 85%;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+input[type="email"],
+input[type="name"],
+select,
+textarea {
+  width: 90%;
+  margin-bottom: 12px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 50px;
+}
+
+/* .btn:hover {
+    background-color: ;
+    color: ;
+  } */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#success-message {
+  display: none;
+  color: blue;
+}
+
+input[type="checkbox"]:checked ~ .formulaire {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ #success-message {
+  display: block;
+}
